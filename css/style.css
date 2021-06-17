@@ -20,6 +20,14 @@ p {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
 h2:after {
   content: "";
   display: block;
@@ -35,6 +43,20 @@ h3:after {
   height: 3px;
   margin: 14px auto 10px auto;
 }
+
+.btn-preto:hover {
+  border-color: #000;
+  color: #000;
+}
+
+.btn-branco:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+img {
+  display: block;
+}
 /* Header */
 .header {
   position: fixed;
@@ -42,6 +64,7 @@ h3:after {
   width: 100%;
   background: #fec63e;
   padding: 15px 0;
+  z-index: 10;
 }
 
 .header_menu {
@@ -73,7 +96,7 @@ h3:after {
   height: 380px;
   background: url("../img/bg.jpg") no-repeat center;
   background-size: cover;
-  margin-top: 96px;
+  margin-top: 92px;
   text-align: center;
   padding-top: 80px;
 }
@@ -112,10 +135,6 @@ h3:after {
   letter-spacing: 0.1em;
 }
 
-.introducao .btn:hover {
-  border-color: #fff;
-  color: #fff;
-}
 /* Produtos */
 .produtos .container {
   text-align: center;
@@ -127,12 +146,7 @@ h3:after {
   justify-content: space-between;
   padding: 30px 0 45px 0;
 }
-.produtos h2 {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+
 .produtos h2:after {
   background-color: #000;
 }
@@ -145,7 +159,7 @@ h3:after {
 .card-icone-bike {
   height: 200px;
   background-color: #000;
-  text-align: center;
+  padding-left: 50px;
   padding-top: 25px;
 }
 
@@ -165,11 +179,6 @@ h3:after {
   padding-bottom: 20px;
 }
 
-.produtos .btn:hover {
-  border-color: #000;
-  color: #000;
-}
-
 /* Portfolio */
 .portfolio {
   background-color: #000;
@@ -178,20 +187,143 @@ h3:after {
 }
 
 .portfolio h2 {
-  font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
   color: #fec63e;
-  letter-spacing: 0.1em;
 }
 
 .portfolio h2:after {
   background-color: #fec63e;
 }
 
-.card-imagens {
+.portfolio ul li:last-child {
+  margin-top: 20px;
+}
+
+.call {
+  padding-top: 40px;
+  text-align: center;
+  clear: both;
+}
+
+.call p {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Qualidade */
+
+.qualidade h2:after {
+  background-color: #000;
+}
+
+.qualidade {
+  padding: 60px 0;
+}
+
+.qualidade:after {
+  content: "";
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url("../img/linhas.svg") no-repeat center;
+  position: absolute;
+  top: 209px;
+  right: 162px;
+  z-index: -1;
+}
+
+.qualidade img {
+  margin: 0 auto;
+}
+
+.qualidade_lista {
+  padding-top: 40px;
+}
+.qualidade_lista li {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.qualidade li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.qualidade li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 6px auto;
+}
+
+.qualidade .call p {
+  color: #000;
+}
+
+/* Footer */
+.footer-up {
+  width: 100%;
+  height: 220px;
+  background: url("../img/bg-footer.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.footer-up .quote-externo {
+  max-width: 400px;
+}
+
+.footer-down {
+  background-color: #000;
+  text-align: left;
+  height: 150px;
+}
+.footer-down h3 {
+  color: #fec63e;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+.footer-down h3::after {
+  margin: 14px 0 10px 0;
+  background-color: #fec63e;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history p {
+  max-width: 400px;
+  color: white;
+}
+
+.contact ul li {
+  color: white;
+}
+
+.social-media-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+}
+
+.social-media-icons a {
+  border: solid 3px #fec63e;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.copy {
+  width: 100%;
+  background-color: #fec63e;
+  padding: 20px 0;
 }
