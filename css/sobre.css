@@ -1,0 +1,32 @@
+.introducao {
+  background: url("../img/bg-sobre.jpg") no-repeat center;
+}
+
+.sobre_bikcraft {
+  margin: 70px auto 70px auto;
+}
+.sobre_bikcraft h2 {
+  text-align: left;
+}
+.sobre_bikcraft h2:after {
+  background-color: #484b4d;
+  margin: 14px 0 10px 0;
+}
+.historia {
+  margin-right: 80px;
+}
+.historia p {
+  font-size: 18px;
+}
+.valores li {
+  font-size: 18px;
+  line-height: 25px;
+}
+.img_sobre {
+  width: 100%;
+  height: 230px;
+  margin-top: 50px;
+}
+.qualidade {
+  padding-bottom: 100px;
+}

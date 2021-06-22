@@ -1,0 +1,88 @@
+/* Introdução */
+.introducao {
+  height: 380px;
+  background: url("../img/bg.jpg") no-repeat center;
+}
+
+.introducao h1 {
+  font-size: 46px;
+}
+
+.introducao h1:after {
+  content: none;
+}
+
+/* Produtos */
+
+.produtos .container {
+  text-align: center;
+  padding: 60px 0;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0 45px 0;
+}
+
+.produtos h2:after {
+  background-color: #000;
+}
+.produtos .card_produto {
+  width: 300px;
+  height: 320px;
+  background-color: #fec63e;
+}
+
+.card_bike {
+  height: 200px;
+  background-color: #000;
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+.card_produto h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
+.card_produto h3:after {
+  background-color: #000;
+}
+
+.produtos p {
+  padding-bottom: 20px;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: #000;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.portfolio h2 {
+  color: #fec63e;
+}
+
+.portfolio h2:after {
+  background-color: #fec63e;
+}
+
+.portfolio ul li:last-child {
+  margin-top: 20px;
+}
+
+.call {
+  padding-top: 40px;
+  text-align: center;
+  clear: both;
+}
+
+.call p {
+  margin-bottom: 20px;
+  color: #fff;
+}

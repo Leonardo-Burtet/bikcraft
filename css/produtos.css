@@ -1,0 +1,153 @@
+/* Introdução */
+.introducao {
+  background: url("../img/bg-produtos.jpg") no-repeat center;
+}
+
+.introducao h1:after {
+  background-color: #fff;
+}
+
+/* Produtos */
+li,
+label,
+input {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.produtos {
+  padding: 50px 0;
+}
+
+.produto {
+  height: 580px;
+  margin-bottom: 20px;
+}
+.produto_title {
+  height: 280px;
+  margin-bottom: 20px;
+  background-size: cover;
+  text-align: center;
+  padding-top: 80px;
+}
+.produto_title h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+.produto_title h2:after {
+  background-color: #fff;
+}
+
+.produto_title h2:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 14px auto 10px auto;
+  background-color: #fff;
+}
+.produto_bik {
+  background-color: #000;
+  padding: 70px 0;
+}
+.produto_bik img {
+  margin: 0 auto;
+}
+
+.produto_info {
+  background-color: #000;
+}
+
+.produto_info p {
+  color: #fff;
+  line-height: 25px;
+  font-size: 18px;
+  padding: 30px;
+  height: 180px;
+}
+
+.produto_info ul li {
+  background-color: #fec63e;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  padding-top: 16px;
+  width: 229px;
+  height: 49px;
+  float: left;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.produto_info ul li:nth-child(1),
+.produto_info ul li:nth-child(2) {
+  margin-bottom: 2px;
+}
+.produto_info ul li:nth-child(even) {
+  margin-left: 2px;
+}
+
+/* Estilos individuais */
+.item_1 .produto_title {
+  background: url("../img/produtos/bikcraft-passeio-1.jpg") no-repeat center;
+}
+.item_2 .produto_title {
+  background: url("../img/produtos/bikcraft-esporte-1.jpg") no-repeat center;
+}
+.item_3 .produto_title {
+  background: url("../img/produtos/bikcraft-retro-1.jpg") no-repeat center;
+}
+
+/* Orçamento */
+
+.orcamento {
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 40px;
+}
+.orcamento h2 {
+  color: #fec63e;
+  padding: 20px;
+}
+.orcamento h2:after {
+  background-color: #fec63e;
+}
+/*Formulário*/
+.formulario input,
+textarea {
+  width: 100%;
+  margin: 5px 0 10px;
+  border: solid 5px #fec63e;
+  background-color: #000;
+  color: #fff;
+  outline: none;
+  resize: none;
+  padding: 7px 10px;
+  font-size: 14px;
+}
+
+.formulario .btn {
+  background-color: #000;
+}
+
+/*Dados e Especificaçoes*/
+.dados,
+.monte_bik {
+  padding-left: 60px;
+}
+.dados h4,
+.monte_bik h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fec63e;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.monte_bik h4 {
+  padding: 45px 0 20px 0;
+}
+.monte_bik ul li {
+  padding: 5px;
+}
+.monte_bik ul li:nth-child(odd) {
+  background-color: #292929;
+}

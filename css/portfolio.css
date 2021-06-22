@@ -1,0 +1,12 @@
+.introducao {
+  background: url("../img/bg-portfolio.jpg") no-repeat center;
+}
+
+.portfolio {
+  background: #000;
+  padding: 30px;
+}
+
+.portfolio ul li:first-child{
+  padding-bottom: 20px;
+}
