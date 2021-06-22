@@ -1,12 +1,35 @@
 .introducao {
   background: url("../img/bg-portfolio.jpg") no-repeat center;
+  background-size: cover;
 }
 
+.quote_clientes {
+  padding: 60px 0;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.quote_clientes p {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-style: italic;
+}
+
+.quote_clientes cite {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  float: right;
+  font-style: normal;
+  margin-bottom: 20px;
+}
 .portfolio {
   background: #000;
   padding: 30px;
 }
 
-.portfolio ul li:first-child{
+.portfolio ul li:first-child {
   padding-bottom: 20px;
 }

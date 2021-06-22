@@ -2,6 +2,8 @@
 .introducao {
   height: 380px;
   background: url("../img/bg.jpg") no-repeat center;
+  padding-top: 80px;
+  background-size: cover;
 }
 
 .introducao h1 {
