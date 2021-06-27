@@ -1,127 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikcraft - Contato</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bikcraft - Contato</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/contato.css">
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="grid-4"><img src="img/bikcraft.svg" alt="logo"></a>
-      <nav class="grid-12 header_menu">
-        <ul>
-          <li><a href="sobre.html">SOBRE</a></li>
-          <li><a href="produtos.html">PRODUTOS</a></li>
-          <li><a href="portfolio.html">PORTFÓLIO</a></li>
-          <li><a href="contato.html" class="menu_ativo">CONTATO</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="introducao">
-    <div class="container">
-      <h1>Contato</h1>
-      <p>tire as suas dúvidas com a gente</p>
-    </div>
-  </section>
-
-
-  <section class="contato">
-    <div class="container">
-      <div class="formulario grid-8">
-        <form action="" method="GET" id="form_contato">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email">
-          <label for="telefone">Telefone</label>
-          <input type="tel" id="telefone" name="telefone">
-          <label for="mensagem">Mensagem</label>
-          <textarea name="mensagem" id="mensagem" rows="8" cols="30"></textarea>
-
-          <button class="btn btn_preto" type="submit" form="form_contato" value="Enviar">Enviar</button>
-        </form>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="grid-4"
+          ><img src="img/bikcraft.svg" alt="logo"
+        /></a>
+        <nav class="grid-12 header_menu">
+          <ul>
+            <li><a href="sobre.html">SOBRE</a></li>
+            <li><a href="produtos.html">PRODUTOS</a></li>
+            <li><a href="portfolio.html">PORTFÓLIO</a></li>
+            <li><a href="contato.html" class="menu_ativo">CONTATO</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="dados grid-8">
+    </header>
 
-        <h4>Dados</h4>
-        <ul>
-          <li>+55 21 99999-9999</li>
-          <li>orcamento@bikcraft.com</li>
-          <li>Rua Ali Perto - Botafogo</li>
-          <li>Rio de Janeiro - RJ - Brasil</li>
-        </ul>
+    <section class="introducao">
+      <div class="container">
+        <h1>Contato</h1>
+        <p>tire as suas dúvidas com a gente</p>
+      </div>
+    </section>
 
-        <div class="social_media">
-          <h4>Redes Sociais</h4>
-          <div class="media_icons">
-            <a href="#"><img src="./img/redes-sociais/facebook.svg" alt="facebook"></a>
-            <a href="#"><img src="./img/redes-sociais/instagram.svg" alt="instagram"></a>
-            <a href="#"><img src="./img/redes-sociais/twitter.svg" alt="twitter"></a>
-          </div>
+    <section class="contato">
+      <div class="container">
+        <div class="formulario grid-8">
+          <form action="" method="GET" id="form_contato">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" />
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              rows="8"
+              cols="30"
+            ></textarea>
+
+            <button
+              class="btn btn_preto"
+              type="submit"
+              form="form_contato"
+              value="Enviar"
+            >
+              Enviar
+            </button>
+          </form>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="dados grid-8">
+          <h4>Dados</h4>
+          <ul>
+            <li>+55 21 99999-9999</li>
+            <li>orcamento@bikcraft.com</li>
+            <li>Rua Ali Perto - Botafogo</li>
+            <li>Rio de Janeiro - RJ - Brasil</li>
+          </ul>
 
-  <section class="container contato_mapa">
-    <a href="http://google.com" target="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
-  </section>
-
-  <footer>
-    <div class="footer_up">
-      <div class="container">
-        <blockquote class="quote_externo">
-          <p>
-            "o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana"
-          </p>
-          <cite>WILLIAM MORRIS</cite>
-        </blockquote>
-      </div>
-    </div>
-    <div class="footer_down">
-      <div class="container">
-        <div class="infos">
-          <div class="info_historia">
-            <h3>Nossa história</h3>
-            <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.Interesse por todos os detalhes da vida cotidiana.</p>
-          </div>
-          <div class="info_contato">
-            <h3>Contato</h3>
-            <ul>
-              <li>- 21 9999-9999</li>
-              <li>- contato@bikcraft.com</li>
-              <li>- Botafogo - RJ</li>
-            </ul>
-          </div>
           <div class="social_media">
-            <h3>Redes Sociais</h3>
+            <h4>Redes Sociais</h4>
             <div class="media_icons">
-              <a href="#"><img src="./img/redes-sociais/facebook.svg" alt="facebook"></a>
-              <a href="#"><img src="./img/redes-sociais/instagram.svg" alt="instagram"></a>
-              <a href="#"><img src="./img/redes-sociais/twitter.svg" alt="twitter"></a>
+              <a href="#"
+                ><img src="./img/redes-sociais/facebook.svg" alt="facebook"
+              /></a>
+              <a href="#"
+                ><img src="./img/redes-sociais/instagram.svg" alt="instagram"
+              /></a>
+              <a href="#"
+                ><img src="./img/redes-sociais/twitter.svg" alt="twitter"
+              /></a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="copy">
-      <div class="container">
-        <p class="">Bikcraft 2021 - Alguns direitos reservados.
-        </p>
+    <section class="container contato_mapa">
+      <a href="http://google.com" target="_blank" class="grid-16"
+        ><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"
+      /></a>
+    </section>
+
+    <footer>
+      <div class="footer_up">
+        <div class="container">
+          <blockquote class="quote_externo">
+            <p>
+              "o verdadeiro segredo da felicidade está em ter um genuíno
+              interesse por todos os detalhes da vida cotidiana"
+            </p>
+            <cite>WILLIAM MORRIS</cite>
+          </blockquote>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
+      <div class="footer_down">
+        <div class="container">
+          <div class="infos">
+            <div class="info_historia">
+              <h3>Nossa história</h3>
+              <p>
+                O verdadeiro segredo da felicidade está em ter um genuíno
+                interesse por todos os detalhes da vida cotidiana.Interesse por
+                todos os detalhes da vida cotidiana.
+              </p>
+            </div>
+            <div class="info_contato">
+              <h3>Contato</h3>
+              <ul>
+                <li>- 21 9999-9999</li>
+                <li>- contato@bikcraft.com</li>
+                <li>- Botafogo - RJ</li>
+              </ul>
+            </div>
+            <div class="social_media">
+              <h3>Redes Sociais</h3>
+              <div class="media_icons">
+                <a href="#"
+                  ><img src="./img/redes-sociais/facebook.svg" alt="facebook"
+                /></a>
+                <a href="#"
+                  ><img src="./img/redes-sociais/instagram.svg" alt="instagram"
+                /></a>
+                <a href="#"
+                  ><img src="./img/redes-sociais/twitter.svg" alt="twitter"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="copy">
+        <div class="container">
+          <p class="">Bikcraft 2021 - Alguns direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
