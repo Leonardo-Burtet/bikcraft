@@ -1,6 +1,27 @@
+/*Tablet*/
 @media only screen and (min-width: 788px) and (max-width: 959px) {
+  /*Qualidade*/
+  .qualidade:after {
+    right: 66px;
+  }
+
+  .qualidade_lista li {
+    padding: 0 10px;
+  }
+
+  /* Produtos */
+  .produto_info p {
+    font-size: 14px;
+    padding: 20px 30px;
+    height: 122px;
+  }
+
+  .produto_info ul li {
+    width: 181px;
+  }
 }
 
+/*Smartphone*/
 @media only screen and (max-width: 787px) {
   /*header*/
   .header {
@@ -29,12 +50,98 @@
   .header_menu ul li a:hover {
     border-color: #fff;
   }
+
+  .header_menu ul li a.menu_ativo {
+    color: #fff;
+    border-color: #fff;
+  }
   /*introdução*/
   .introducao {
     background: url("../img/bg-mobile.jpg") no-repeat center;
     margin-top: 0;
-    padding-top: 20px;
+    padding-top: 40px;
+  }
+  .introducao h1 {
+    font-size: 36px;
   }
 
-  /* Footer */
+  /*Call*/
+  .call {
+    padding-top: 10px;
+  }
+
+  /*Qualidade*/
+  .qualidade:after {
+    display: none;
+  }
+
+  /*Sobre*/
+  .sobre_bikcraft {
+    margin-bottom: 0;
+  }
+  .sobre_bikcraft p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 0px;
+  }
+
+  .sobre_bikcraft .valores li {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  /* Produtos */
+  .produto {
+    height: auto;
+  }
+  .produto_title,
+  .produto_bik,
+  .produto_img {
+    height: 185px;
+  }
+
+  .produto_title {
+    padding-top: 45px;
+  }
+
+  .produto_bik {
+    padding-top: 25px;
+  }
+
+  .produto_info {
+    height: auto;
+  }
+  .produto_info p {
+    font-size: 14px;
+    padding: 20px 30px;
+    height: auto;
+  }
+  .produto_info ul {
+    height: 100px;
+  }
+  .produto_info ul li {
+    width: 149px;
+    height: 49px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 15px;
+  }
+
+  /*orçamento*/
+  .dados,
+  .monte_bik {
+    padding-left: 0px;
+  }
+
+  /*contato*/
+  .contato {
+    padding: 60px 0 5px 0;
+  }
+  .contato .social_media {
+    padding-top: 20px;
+  }
+  /*Mapa*/
+  .contato_mapa {
+    margin-bottom: 30px;
+  }
 }

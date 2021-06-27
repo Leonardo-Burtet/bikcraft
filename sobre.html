@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="css/qualidade.css">
   <link rel="stylesheet" href="css/sobre.css">
   <link rel="stylesheet" href="css/responsivo.css">
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
 </head>
 
 <body>
@@ -20,7 +23,7 @@
       <a href="index.html" class="grid-4"><img src="img/bikcraft.svg" alt="logo"></a>
       <nav class="grid-12 header_menu">
         <ul>
-          <li><a href="sobre.html" class="menu_ativo">SOBRE</a></li>
+          <li><a href="sobre.html" class="menu_ativo" >SOBRE</a></li>
           <li><a href="produtos.html">PRODUTOS</a></li>
           <li><a href="portfolio.html">PORTFÓLIO</a></li>
           <li><a href="contato.html">CONTATO</a></li>
@@ -31,11 +34,11 @@
 
   <section class="introducao">
     <div class="container">
-      <h1>Sobre</h1>
-      <p>conheça mais sobre a bikcraft</p>
+      <h1 data-anime="400" class="fadeInDown">Sobre</h1>
+      <p data-anime="800" class="fadeInDown">conheça mais sobre a bikcraft</p>
   </section>
 
-  <section class="sobre_bikcraft container">
+  <section class="sobre_bikcraft container" data-anime="1200" class="fadeInDown">
     <div class="historia grid-9">
       <h2>História, Missão e Visão</h2>
       <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
@@ -47,9 +50,9 @@
       <h2>Valores</h2>
       <ul>
         <li>- Qualidade no processo com</li>
-        <li> - Foco no cliente sem perder a</li>
-        <li> - Diversão, preservando a</li>
-        <li> - Natureza com sustentabilidade</li>
+        <li>- Foco no cliente sem perder a</li>
+        <li>- Diversão, preservando a</li>
+        <li>- Natureza com sustentabilidade</li>
       </ul>
     </div>
 
@@ -112,7 +115,8 @@
       </div>
     </div>
   </footer>
-
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

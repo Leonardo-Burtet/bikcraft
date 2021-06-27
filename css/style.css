@@ -9,6 +9,9 @@ p {
   line-height: 20px;
 }
 
+li {
+  font-family: Georgia, "Times New Roman", serif;
+}
 .btn {
   border: 3px solid #fec63e;
   padding: 10px 30px;
@@ -82,6 +85,7 @@ img {
 }
 
 .header_menu ul li {
+  font-family: Arial, Helvetica, sans-serif;
   display: inline-block;
   margin-left: 25px;
   margin-top: 20px;
@@ -139,7 +143,7 @@ img {
 .footer_down {
   background-color: #000;
   text-align: left;
-  height: 150px;
+  padding-bottom: 10px;
 }
 .footer_down h3 {
   color: #fec63e;
@@ -156,6 +160,7 @@ img {
 .infos {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .info_historia p {
@@ -165,6 +170,7 @@ img {
 
 .info_contato ul li {
   color: white;
+  font-size: 14px;
 }
 
 .media_icons {
@@ -215,4 +221,56 @@ img {
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.1em;
+}
+
+/*Javascript*/
+
+.js [data-slide] {
+  position: relative;
+}
+
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0;
+  border-radius: 6px;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #1d1d1d;
+}
+
+.js [data-slide-nav] button.active {
+  background: #fec63e;
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
 }

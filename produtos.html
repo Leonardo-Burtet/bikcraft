@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/produtos.css">
   <link rel="stylesheet" href="css/responsivo.css">
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
 </head>
 
 <body>
@@ -30,11 +33,11 @@
 
   <section class="introducao">
     <div class="container">
-      <h1>Produtos</h1>
-      <p>conheça todos nossos produtos</p>
+      <h1 data-anime="400" class="fadeInDown">Produtos</h1>
+      <p data-anime="800" class="fadeInDown">conheça todos nossos produtos</p>
   </section>
 
-  <section class="produtos">
+  <section class="produtos" data-anime="1200" class="fadeInDown" >
     <div class="container">
       <div class="produto item_1">
         <div class="produto_title  grid-11">
@@ -190,6 +193,8 @@
       </div>
     </div>
   </footer>
+  <script src="./js/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
