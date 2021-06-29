@@ -1,5 +1,5 @@
 /* Introdução */
-.introducao {
+.intro_produtos {
   background: url("../img/bg-produtos.jpg") no-repeat center;
   background-size: cover;
 }
@@ -113,8 +113,8 @@ input {
   background-color: #fec63e;
 }
 /*Formulário*/
-.formulario input,
-textarea {
+.orcamento .formulario input,
+.orcamento textarea {
   width: 100%;
   margin: 5px 0 10px;
   border: solid 5px #fec63e;
@@ -126,7 +126,7 @@ textarea {
   font-size: 14px;
 }
 
-.formulario .btn {
+.orcamento .formulario .btn {
   background-color: #000;
 }
 

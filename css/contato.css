@@ -1,4 +1,4 @@
-.introducao {
+.intro_contato {
   background: url("../img/bg-contato.jpg") no-repeat center;
   background-size: cover;
 }
@@ -16,12 +16,12 @@
 }
 
 /*Formulário*/
-.formulario input,
-textarea {
+.contato .formulario input,
+.contato textarea {
   width: 100%;
   margin: 5px 0 10px;
   border: solid 5px #fec63e;
-  background-color: none;
+  background: none;
   color: #000;
   outline: none;
   resize: none;
@@ -29,7 +29,7 @@ textarea {
   font-size: 14px;
 }
 
-.formulario .btn {
+.contato .formulario .btn {
   background-color: #fff;
 }
 

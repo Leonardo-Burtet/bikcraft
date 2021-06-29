@@ -1,0 +1,289 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+li {
+  font-family: Georgia, "Times New Roman", serif;
+}
+.btn {
+  border: 3px solid #fec63e;
+  padding: 10px 30px;
+  color: #fec63e;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+h1:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto 10px auto;
+  background-color: white;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+h2:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 14px auto 10px auto;
+}
+
+h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 14px auto 10px auto;
+}
+
+.btn_preto:hover {
+  border-color: #000;
+  color: #000;
+}
+
+.btn_branco:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fec63e;
+  padding: 15px 0;
+  z-index: 10;
+}
+
+.header_menu {
+  text-align: right;
+}
+
+.header_menu ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.header_menu ul li a {
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.header_menu ul li a:hover {
+  color: #fff;
+}
+
+.header_menu ul li a.menu_ativo {
+  color: #fff;
+}
+
+/* Introdução */
+.introducao {
+  width: 100%;
+  height: 160px;
+  margin-top: 92px;
+  text-align: center;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.introducao h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Footer */
+.footer_up {
+  width: 100%;
+  height: 220px;
+  background: url("../img/bg-footer.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.footer_up .quote_externo {
+  max-width: 400px;
+}
+
+.footer_down {
+  background-color: #000;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.footer_down h3 {
+  color: #fec63e;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+.footer_down h3::after {
+  margin: 14px 0 10px 0;
+  background-color: #fec63e;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info_historia p {
+  max-width: 400px;
+  color: white;
+}
+
+.info_contato ul li {
+  color: white;
+  font-size: 14px;
+}
+
+.media_icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.media_icons a {
+  border: solid 3px #fec63e;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.media_icons a:hover {
+  border-color: #fff;
+}
+
+.copy {
+  width: 100%;
+  background-color: #fec63e;
+  padding: 20px 0;
+}
+
+/* Quote externo dos footers e da introducao do index*/
+
+.quote_externo {
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.quote_externo p {
+  font-style: italic;
+}
+
+.quote_externo p:before,
+.quote_externo p:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 14px auto 10px auto;
+}
+
+.quote_externo cite {
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+/*Javascript*/
+
+.js [data-slide] {
+  position: relative;
+}
+
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0;
+  border-radius: 6px;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #1d1d1d;
+}
+
+.js [data-slide-nav] button.active {
+  background: #fec63e;
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+}
+
+.nao-aparece {
+  visibility: hidden;
+  position: absolute;
+  height: 0px;
+}
+
+#form-sucesso {
+  color: #31aa39;
+}
+#form-erro {
+  color: #f64540;
+}

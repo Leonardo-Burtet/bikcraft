@@ -4,12 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bikcraft - Contato</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/contato.css" />
-    <link rel="stylesheet" href="css/responsivo.css" />
+    <meta
+      name="description"
+      content="Compre a sua bicicleta personalidade na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bikcraft - Bicicletas Personalizadas" />
+    <meta
+      property="og:description"
+      content="Compre a sua bicicleta personalidade na Bikcraft. Possuímos modelos Passeio, Retrô e Esporte."
+    />
+    <meta property="og:url" content="http://bikcraft.com/contato.html" />
+    <meta property="og:image" content="http://bikcraft.com/img/og-image.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script>
       document.documentElement.classList.add("js");
     </script>
@@ -32,7 +44,7 @@
       </div>
     </header>
 
-    <section class="introducao">
+    <section class="introducao intro_contato">
       <div class="container">
         <h1 data-anime="400" class="fadeInDown">Contato</h1>
         <p data-anime="800" class="fadeInDown">
@@ -41,16 +53,34 @@
       </div>
     </section>
 
-    <section class="contato" data-anime="1200" class="fadeInDown">
+    <section class="contato fadeInDown" data-anime="1200">
       <div class="container">
         <div class="formulario grid-8">
-          <form id="form_contato">
+          <form
+            id="form_contato"
+            method="POST"
+            action="./enviar-sendgrid.php"
+            class="formphp"
+          >
             <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" />
+            <input type="text" id="nome" name="nome" required />
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
+            <input type="email" id="email" name="email" required />
             <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" />
+            <input type="tel" id="telefone" name="telefone" required />
+            <label class="nao-aparece"
+              >Se você não é um robô, deixe em branco.</label
+            >
+            <input type="text" class="nao-aparece" name="leaveblank" />
+            <label class="nao-aparece"
+              >Se você não é um robô, não mude este campo.</label
+            >
+            <input
+              type="text"
+              class="nao-aparece"
+              name="dontchange"
+              value="http://"
+            />
             <label for="mensagem">Mensagem</label>
             <textarea
               name="mensagem"
@@ -60,6 +90,8 @@
             ></textarea>
 
             <button
+              id="enviar"
+              name="enviar"
               class="btn btn_preto"
               type="submit"
               form="form_contato"
@@ -158,6 +190,7 @@
       </div>
     </footer>
     <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-form.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
