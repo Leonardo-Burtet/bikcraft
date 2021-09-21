@@ -5,7 +5,7 @@ Projeto criado no Curso de Web Designer da origamid
 O projeto foi criado do zero desde o wireframe até a codificação, com o objetivo de aplicar habilidades de web designer desenvolvida durante o curso, e criar um código limpo e organizado.
 
 ## Desafio
-Nesse projeto eu me desafiei a, antes de assistir as aulas de código, aplicar habilidades de front-end codificando a partir da referência do design. No qual pude ver em quais áreas eu tinha mais dificuldade no momento de transformar o design em código. Então fica o desafio caso alguem tenha interesse de tentar reproduzir o projeto, você pode acessar <a href=https://bikcraft-rho.vercel.app/>bikcraft-rho.vercel.app</a> e tentar criar a sua versão. Se eu puder ajudar de alguma forma, por favor, entre em contato. 
+Nesse projeto eu me desafiei antes de assistir as aulas de código,a aplicar habilidades de front-end codificando a partir da referência do design. No qual pude ver em quais áreas eu tinha mais dificuldade no momento de transformar o design em código. Então fica o desafio caso alguem tenha interesse de tentar reproduzir o projeto, você pode acessar <a href=https://bikcraft-rho.vercel.app/>bikcraft-rho.vercel.app</a> e tentar criar a sua versão. Se eu puder ajudar de alguma forma, por favor, entre em contato. 
 
 ## Desktop 
 <p align="center">
